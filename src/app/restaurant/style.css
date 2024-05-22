@@ -34,3 +34,10 @@
     font-size: 10px;
     background-color: white;
 }
+
+.input-error {
+    position: absolute;
+    color: red;
+    padding: 8px;
+    font-size: 14px;
+}

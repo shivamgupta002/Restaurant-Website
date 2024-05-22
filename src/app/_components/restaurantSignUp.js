@@ -9,10 +9,31 @@ const RestaurantSignUp = () => {
   const [city, setCity] = useState("");
   const [address, setAddress] = useState("");
   const [contact, setContact] = useState("");
-  
+  const [error, setError] = useState(false);
+  const [passwordError, setPasswordError] = useState(false);
+
   const router = useRouter();
 
   const handleSignUp = async () => {
+    if (password !== c_password) {
+      setPasswordError(true);
+    } else {
+      setPasswordError(false);
+    }
+    if (
+      !email ||
+      !!password ||
+      !c_password ||
+      !name ||
+      !city ||
+      !address ||
+      !contact
+    ) {
+      setError(true);
+    } else {
+      setError(false);
+    }
+    return false;
     console.log(email, password, c_password, name, city, address, contact);
     let response = await fetch("http://localhost:3000/api/restaurant", {
       method: "POST",
@@ -39,6 +60,9 @@ const RestaurantSignUp = () => {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
         />
+        {error && !email && (
+          <span className="input-error">Please enter valid email</span>
+        )}
       </div>
       <div className="input-Wrapper">
         <input
@@ -48,6 +72,14 @@ const RestaurantSignUp = () => {
           value={password}
           onChange={(event) => setPassword(event.target.value)}
         />
+        {passwordError && (
+          <span className="input-error">
+            Password and Confirm password does not match
+          </span>
+        )}
+        {error && !password && (
+          <span className="input-error">Please enter your password</span>
+        )}
       </div>
       <div className="input-Wrapper">
         <input
@@ -57,6 +89,14 @@ const RestaurantSignUp = () => {
           value={c_password}
           onChange={(event) => setC_password(event.target.value)}
         />
+        {passwordError && (
+          <span className="input-error">
+            Password and Confirm password does not match
+          </span>
+        )}
+        {error && !c_password && (
+          <span className="input-error">Please enter confirm password</span>
+        )}
       </div>
       <div className="input-Wrapper">
         <input
@@ -66,6 +106,11 @@ const RestaurantSignUp = () => {
           value={name}
           onChange={(event) => setName(event.target.value)}
         />
+        {error && !name && (
+          <span className="input-error">
+            Please enter valid restaurant name
+          </span>
+        )}
       </div>
       <div className="input-Wrapper">
         <input
@@ -75,6 +120,9 @@ const RestaurantSignUp = () => {
           value={city}
           onChange={(event) => setCity(event.target.value)}
         />
+        {error && !city && (
+          <span className="input-error">Please enter valid city</span>
+        )}
       </div>
       <div className="input-Wrapper">
         <input
@@ -84,6 +132,9 @@ const RestaurantSignUp = () => {
           value={address}
           onChange={(event) => setAddress(event.target.value)}
         />
+        {error && !address && (
+          <span className="input-error">Please enter valid address</span>
+        )}
       </div>
       <div className="input-Wrapper">
         <input
@@ -93,6 +144,9 @@ const RestaurantSignUp = () => {
           value={contact}
           onChange={(event) => setContact(event.target.value)}
         />
+        {error && !contact && (
+          <span className="input-error">Please enter valid phone number</span>
+        )}
       </div>
       <div className="input-Wrapper">
         <button className="button" onClick={handleSignUp}>
