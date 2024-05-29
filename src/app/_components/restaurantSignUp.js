@@ -33,7 +33,7 @@ const RestaurantSignUp = () => {
     } else {
       setError(false);
     }
-    return false;
+    // return false;
     console.log(email, password, c_password, name, city, address, contact);
     let response = await fetch("http://localhost:3000/api/restaurant", {
       method: "POST",
