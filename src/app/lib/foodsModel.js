@@ -3,7 +3,7 @@ const { default: mongoose } = require("mongoose");
 const foodsModel = new mongoose.Schema({
   name: String,
   price: Number,
-  path: String,
+  img_path: String,
   description: String,
   resto_id: mongoose.Schema.Types.ObjectId,
 });

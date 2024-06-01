@@ -14,11 +14,17 @@ const AddFoodItem = () => {
     }
     let response = await fetch("http://localhost:3000/api/restaurant/foods", {
       method: "POST",
-      body: JSON.stringify({ name, price, img_path: path, description }),
+      body: JSON.stringify({
+        name,
+        price,
+        img_path: path,
+        description,
+        resto_id,
+      }),
     });
-    response=await response.json();
-    if(response.success){
-      alert("food item added successfully")
+    response = await response.json();
+    if (response.success) {
+      alert("food item added successfully");
     }
   };
 
