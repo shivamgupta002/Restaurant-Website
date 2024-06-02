@@ -31,3 +31,13 @@
     padding: 8px;
     font-size: 14px;
 }
+
+table,td,th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 10px;
+}
+table td button{
+    margin: 5px;
+    text-transform: capitalize;
+}
