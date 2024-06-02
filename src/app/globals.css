@@ -41,3 +41,6 @@ table td button{
     margin: 5px;
     text-transform: capitalize;
 }
+table img{
+    width: 80px;
+}
