@@ -7,10 +7,21 @@ export async function GET(request, content) {
   // console.log(id);
   let success = false;
   await mongoose.connect(connectionStr, { useNewUrlParser: true });
-//   let resto_id=localStorage.getItem()
-//   const result = await foodSchema.find({ resto_id: "665598fcdaf549bf1d6e5585" });
+  //   let resto_id=localStorage.getItem()
+  //   const result = await foodSchema.find({ resto_id: "665598fcdaf549bf1d6e5585" });
   const result = await foodSchema.find();
   if (result) {
+    success = true;
+  }
+  return NextResponse.json({ result, success });
+}
+
+export async function DELETE(request, content) {
+  const id = content.params.id;
+  let success = false;
+  await mongoose.connect(connectionStr, { useNewUrlParser: true });
+  const result = await foodSchema.deleteOne({ _id: id });
+  if (result.deletedCount > 0) {
     success = true;
   }
   return NextResponse.json({ result, success });
