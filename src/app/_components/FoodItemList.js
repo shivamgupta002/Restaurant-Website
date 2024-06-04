@@ -1,7 +1,9 @@
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const FoodItemList = () => {
   const [foodItems, setFoodItems] = useState([]);
+  const router = useRouter();
 
   useEffect(() => {
     loadFoodItems();
@@ -69,7 +71,7 @@ const FoodItemList = () => {
                   <button onClick={() => deleteFoodItem(items._id)}>
                     delete
                   </button>
-                  <button>edit</button>
+                  <button onClick={()=>router.push(`dashboard/${items._id}`)}>edit</button>
                 </td>
               </tr>
             ))}
