@@ -50,5 +50,13 @@ Detailed Steps ->>>>>>>
 	Add Style
 	Add search input
 	Select location input
+
+28-> API for location
+
+	Make api route for Api
+	Write code for api
+	Remove duplicate entries
+	Test Api
+
 	
 	
