@@ -76,5 +76,11 @@ Detailed Steps ->>>>>>>
 	Apply substring and case-insensitive regex
 	Test Api
 
+31-> Restaurant List with API
+
+	Call Api for a restaurant listing
+	Render list on ui
+	Add style with a list
+
 	
 	

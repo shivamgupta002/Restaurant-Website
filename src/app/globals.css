@@ -143,3 +143,38 @@ table img {
     border-bottom: 1px solid #ccc;
     cursor: pointer;
 }
+
+.restaurant-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.restaurant-wrapper {
+    width: 45%;
+    background-color: #92a8e4;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.restaurant-wrapper .heading-wrapper,
+.restaurant-wrapper .address-wrapper {
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.restaurant-wrapper h5 {
+    margin-left: 15px;
+}
+
+.restaurant-wrapper .address {
+    margin: 0 5px;
+}
