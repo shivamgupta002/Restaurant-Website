@@ -101,19 +101,19 @@ table img {
     text-align: center;
 }
 
-.input-wrapper {
+.main-page-banner .input-wrapper {
     background-color: #fff;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin:auto;
-    width: 70%;
+    margin: auto;
+    width: 60%;
 }
 
-.select-input {
+.main-page-banner .select-input {
     height: 40px;
     border: none;
-    width: 30%;
+    width: 25%;
     padding-left: 15px;
 }
 
@@ -123,4 +123,23 @@ table img {
     width: 65%;
     border-left: 1px solid #ccc;
     padding-left: 15px;
+}
+
+.location-list {
+    color: #000;
+    list-style-type: none;
+    position: absolute;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-left: -5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.location-list li {
+    width: 14rem;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
 }

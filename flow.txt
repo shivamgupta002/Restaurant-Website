@@ -58,5 +58,12 @@ Detailed Steps ->>>>>>>
 	Remove duplicate entries
 	Test Api
 
+29-> Location list
+
+	Call Location API
+	Store location data in state
+	display list of location
+	Apply style for location list
+	Handle Location with input field
 	
 	
