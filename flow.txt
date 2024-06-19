@@ -66,4 +66,15 @@ Detailed Steps ->>>>>>>
 	Apply style for location list
 	Handle Location with input field
 	
+30-> Api for Search Restaurant
+
+	Make API route
+	Write code for api-
+		Search with location
+		Search with restaurant
+		list without Search
+	Apply substring and case-insensitive regex
+	Test Api
+
+	
 	
