@@ -1,0 +1,54 @@
+Project Process->
+	SignUp and login for restaurant
+	connect app with database
+	add,remove and update food items from restaurant
+	ui for restaurant search and web app front page
+	food items list and restaurant list for users
+	add to cart food items
+	user login and SignUp
+	order food
+	delivery partner assigned to deliver food
+	order list for customer
+	review restaurant
+	auto detect location
+	and many more
+
+Detailed Steps ->>>>>>>
+
+1-> Restaurant Login and Register UI
+	Make main page for login and register of restaurant
+	Make components for login and register of restaurant
+	Add Style for button,input box
+	remove default style and home page content
+
+
+
+24-> Make Api for edit food items
+	Call Api for edit fod items
+	Redirect back to food items list
+	Test Flow
+
+25-> Test Restaurant Dashboard
+
+	Register new Restaurant
+	Test login Flow
+	Add food items in Restaurant
+	Update food items
+	Test list of food items
+	Check all entries in 
+
+26-> Header and footer for customer
+
+	Make Header
+	Add Style for Header
+	Add Header Menus
+	Add footer
+
+27-> Home Page banner and search
+
+	Make a banner for Home Page
+	Add Style
+	Add search input
+	Select location input
+	
+	
