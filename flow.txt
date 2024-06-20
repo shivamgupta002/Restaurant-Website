@@ -99,3 +99,11 @@ Detailed Steps ->>>>>>>
 	Make Api route
 	Get restaurant information
 	Get restaurant food items
+
+35-> Integrate Restaurant details API
+
+	Make API call function
+	Call Api
+	Store details in the state
+	display restaurant details data
+	display restaurant food items
