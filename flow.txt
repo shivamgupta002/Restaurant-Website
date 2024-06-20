@@ -93,4 +93,9 @@ Detailed Steps ->>>>>>>
 	Redirect to restaurant details page
 	Make a banner on the restaurant details page
 	Add Style
-	
+
+34-> API for restaurant details
+
+	Make Api route
+	Get restaurant information
+	Get restaurant food items
