@@ -82,5 +82,9 @@ Detailed Steps ->>>>>>>
 	Render list on ui
 	Add style with a list
 
+32-> Restaurant Search with params
+
+	Search restaurant with location params
+	Search restaurant with restaurant params
 	
 	
