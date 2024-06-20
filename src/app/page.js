@@ -8,7 +8,7 @@ export default function Home() {
   const [selectedLocation, setSelectedLocation] = useState("");
   const [showLocation, setShowLocation] = useState(false);
   const [restaurants, setRestaurants] = useState([]);
-  const router=useRouter();
+  const router = useRouter();
 
   useEffect(() => {
     loadLocation();
@@ -63,13 +63,18 @@ export default function Home() {
             type="text"
             className="search-input"
             placeholder="Enter food or restaurant name"
-            onChange={(event)=>loadRestaurant({restaurant:event.target.value})}
+            onChange={(event) =>
+              loadRestaurant({ restaurant: event.target.value })
+            }
           />
         </div>
       </div>
       <div className="restaurant-list-container">
         {restaurants.map((item) => (
-          <div onClick={()=>router.push('explore/'+item.name)} className="restaurant-wrapper">
+          <div
+            onClick={() => router.push("explore/" + item.name)}
+            className="restaurant-wrapper"
+          >
             <div className="heading-wrapper">
               <h3>{item.name}</h3>
               <h5>{item.contact}</h5>
