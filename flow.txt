@@ -87,4 +87,10 @@ Detailed Steps ->>>>>>>
 	Search restaurant with location params
 	Search restaurant with restaurant params
 	
+33-> Make Restaurant Detailed page
+
+	Make a new page for restaurant details
+	Redirect to restaurant details page
+	Make a banner on the restaurant details page
+	Add Style
 	
