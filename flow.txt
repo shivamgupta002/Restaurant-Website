@@ -113,3 +113,10 @@ Detailed Steps ->>>>>>>
 	Add classes to html page on details page
 	Add add to cart button
 	Add css for restaurant details page
+ 
+37-> Add To cart
+
+	Pass data from restaurant detail page to Header
+	Add data in states and show cart item in Test UI.
+	Store cart items in local Storage
+	

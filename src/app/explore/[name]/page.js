@@ -8,6 +8,7 @@ const Page = (props) => {
 
   const [restaurantDetail, setRestaurantDetail] = useState();
   const [foodItem, setFoodItem] = useState([]);
+  const [cartData, setCartData] = useState();
 
   useEffect(() => {
     loadRestaurantDetails();
@@ -22,9 +23,13 @@ const Page = (props) => {
       setFoodItem(response.foodItem);
     }
   };
+
+  const addToCart = (item) => {
+    setCartData(item);
+  };
   return (
     <>
-      <CustomerHeader />
+      <CustomerHeader cartData={cartData} />
       <div className="restaurant-page-banner">
         <h1>{decodeURI(name)}</h1>
       </div>
@@ -45,7 +50,7 @@ const Page = (props) => {
                 <div>{item.name}</div>
                 <div>{item.price}</div>
                 <div className="description">{item.description}</div>
-                <button>Add to cart</button>
+                <button onClick={() => addToCart(item)}>Add to cart</button>
               </div>
             </div>
           ))
