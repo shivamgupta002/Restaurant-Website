@@ -107,3 +107,9 @@ Detailed Steps ->>>>>>>
 	Store details in the state
 	display restaurant details data
 	display restaurant food items
+
+36-> Style on Restaurant detail Page
+
+	Add classes to html page on details page
+	Add add to cart button
+	Add css for restaurant details page

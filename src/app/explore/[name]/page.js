@@ -1,5 +1,6 @@
 "use client";
 import CustomerHeader from "@/app/_components/CustomersHeader";
+import RestaurantFooter from "@/app/_components/Footer";
 import { useEffect, useState } from "react";
 
 const Page = (props) => {
@@ -27,22 +28,35 @@ const Page = (props) => {
       <div className="restaurant-page-banner">
         <h1>{decodeURI(name)}</h1>
       </div>
-      <div>
-        <h3>{restaurantDetail?.contact}</h3>
-        <h3>{restaurantDetail?.city}</h3>
-        <h3>{restaurantDetail?.address}</h3>
-        <h3>{restaurantDetail?.email}</h3>
+      <div className="detail-wrapper">
+        <h4>Contact : {restaurantDetail?.contact}</h4>
+        <h4>City : {restaurantDetail?.city}</h4>
+        <h4>Address : {restaurantDetail?.address}</h4>
+        <h4>Email : {restaurantDetail?.email}</h4>
       </div>
-      <div>
-        {foodItem.map((item) => (
-          <div>
-            <h2>{item.name}</h2>
-            <h5>{item.price}</h5>
-            <h6>{item.description}</h6>
-            <img src={item.img_path} alt="img" style={{ width: 100 }} />
+      <div className="food-item-wrapper">
+        {foodItem.length > 0 ? (
+          foodItem.map((item) => (
+            <div className="list-item">
+              <div>
+                <img src={item.img_path} alt="img" />
+              </div>
+              <div>
+                <div>{item.name}</div>
+                <div>{item.price}</div>
+                <div className="description">{item.description}</div>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className="food_item_not_available">
+            <h2>Oops! No food item available</h2>
+            <h4>Please try another restaurant</h4>
           </div>
-        ))}
+        )}
       </div>
+      <RestaurantFooter />
     </>
   );
 };

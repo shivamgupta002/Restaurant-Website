@@ -183,3 +183,46 @@ table img {
 .restaurant-page-banner h1 {
     font-size: 65px;
 }
+
+.food_item_not_available {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.detail-wrapper {
+    display: flex;
+    background-color: orange;
+    justify-content: space-around;
+}
+
+.food-item-wrapper {
+    margin: 50px 0;
+}
+
+.food-item-wrapper .list-item {
+    font-weight: bold;
+    color: orange;
+    border-bottom: 1px solid orange;
+    display: flex;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+.food-item-wrapper .list-item button {
+    color: #fff;
+    border: none;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.food-item-wrapper .list-item img {
+    width: 100px;
+    padding-right: 20px;
+    border-radius: 3px;
+}
+
+.food-item-wrapper .list-item .description {
+    font-weight: lighter;
+}
