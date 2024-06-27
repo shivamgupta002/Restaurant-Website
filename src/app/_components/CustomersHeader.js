@@ -16,7 +16,7 @@ const CustomerHeader = (props) => {
           localStorage.removeItem("cart");
           setCartNumber(1);
           setCartItem([props.cartData]);
-          localStorage.setItem("cart", JSON.stringify(props.cartData));
+          localStorage.setItem("cart", JSON.stringify([props.cartData]));
 
         } else {
           let localCartItem = cartItem;
@@ -29,7 +29,7 @@ const CustomerHeader = (props) => {
       } else {
         setCartNumber(1);
         setCartItem([props.cartData]);
-        localStorage.setItem("cart", JSON.stringify(props.cartData));
+        localStorage.setItem("cart", JSON.stringify([props.cartData]));
       }
     }
   }, [props.cartData]);

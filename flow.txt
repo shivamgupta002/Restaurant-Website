@@ -120,3 +120,8 @@ Detailed Steps ->>>>>>>
 	Add data in states and show cart item in Test UI.
 	Store cart items in local Storage
 	
+38-> Remove from cart button
+
+	Get cart item Id
+	Make remove from cart button
+	
