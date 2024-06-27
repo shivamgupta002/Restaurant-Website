@@ -17,14 +17,12 @@ const CustomerHeader = (props) => {
           setCartNumber(1);
           setCartItem([props.cartData]);
           localStorage.setItem("cart", JSON.stringify([props.cartData]));
-
         } else {
           let localCartItem = cartItem;
           localCartItem.push(JSON.parse(JSON.stringify(props.cartData)));
           setCartItem(localCartItem);
           setCartNumber(cartNumber + 1);
           localStorage.setItem("cart", JSON.stringify(localCartItem));
-          
         }
       } else {
         setCartNumber(1);
@@ -33,6 +31,20 @@ const CustomerHeader = (props) => {
       }
     }
   }, [props.cartData]);
+
+  useEffect(() => {
+    if (props.removeCartData) {
+      let localCartItem = cartItem.filter((item) => {
+        return item._id != props.removeCartData;
+      });
+      setCartItem(localCartItem);
+      setCartNumber(cartNumber - 1);
+      localStorage.setItem("cart", JSON.stringify(localCartItem));
+      if(localCartItem.length==0){
+        localStorage.removeItem("cart");
+      }
+    }
+  }, [props.removeCartData]);
   return (
     <>
       <div className="header-wrapper">

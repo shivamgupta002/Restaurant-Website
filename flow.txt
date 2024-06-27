@@ -124,4 +124,11 @@ Detailed Steps ->>>>>>>
 
 	Get cart item Id
 	Make remove from cart button
+
+39-> Remove item from cart
+
+	Send Remove item ID to Header
+	Remove Selected item from cart item
+	Update local Storage
+	Show add to cart button after remove
 	
