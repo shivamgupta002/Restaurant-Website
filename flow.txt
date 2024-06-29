@@ -137,4 +137,11 @@ Detailed Steps ->>>>>>>
 	Make new page for cart
 	Display list of cart items
 	Link for cart in Header
+
+41-> Cart Page Total Price details
+
+	Make a new div block for total price details
+	Show total price,tax and deliver charge
+	Make  order button now
+	add style
 	

@@ -227,12 +227,50 @@ table img {
 .food-item-wrapper .list-item .description {
     font-weight: lighter;
 }
-.list-item-block-1{
+
+.list-item-block-1 {
     width: 10%;
 }
-.list-item-block-2{
+
+.list-item-block-2 {
     width: 70%;
 }
-.list-item-block-3{
+
+.list-item-block-3 {
     width: 20%;
+}
+
+.total-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid orange;
+    align-items: center;
+}
+
+.total-wrapper .row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.total-wrapper .block-1 {
+    width: 70%;
+}
+
+.total-wrapper .block-2 {
+    width: 30%;
+}
+
+.total-wrapper .block-2 button {
+    padding: 10px 25px;
+    border: #aaa;
+    background-color: orange;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
 }
