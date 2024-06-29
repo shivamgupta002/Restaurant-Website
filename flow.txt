@@ -144,4 +144,10 @@ Detailed Steps ->>>>>>>
 	Show total price,tax and deliver charge
 	Make  order button now
 	add style
-	
+
+42-> Customer SignUp UI
+
+	Make user auth page
+	Make SignUp component
+	Make SignUp input field
+	Get input fields value in state	
