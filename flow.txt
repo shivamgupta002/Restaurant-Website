@@ -151,3 +151,11 @@ Detailed Steps ->>>>>>>
 	Make SignUp component
 	Make SignUp input field
 	Get input fields value in state	
+
+43-> User SignUp API
+
+	Make Collection in database
+	Make Schema for user Collection
+	Make Api route
+	code for SignUp Api
+	Call Api

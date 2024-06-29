@@ -9,9 +9,19 @@ const UserSignUp = () => {
   const [city, setCity] = useState("");
   const [address, setAddress] = useState("");
 
-  const handleSignUp = () => {
+  const handleSignUp = async () => {
     // e.preventDefault();
     console.log(name, email, password, cPassword, city, address, mobile);
+    let response = await fetch("http://localhost:3000/api/user", {
+      method: "POST",
+      body: JSON.stringify({ name, email, password, city, address, mobile }),
+    });
+    response = await response.json();
+    if (response.success) {
+      alert("user signup successfully");
+    } else {
+      alert("Error occur while signup ");
+    }
   };
 
   return (
