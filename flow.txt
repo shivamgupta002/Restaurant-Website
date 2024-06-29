@@ -131,4 +131,10 @@ Detailed Steps ->>>>>>>
 	Remove Selected item from cart item
 	Update local Storage
 	Show add to cart button after remove
+
+40-> Cart Page
+
+	Make new page for cart
+	Display list of cart items
+	Link for cart in Header
 	
