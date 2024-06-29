@@ -1,12 +1,20 @@
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import Restaurant from "../restaurant/page";
 
 const CustomerHeader = (props) => {
+  // To Navigate
+  const router = useRouter();
+
+  const userStorage = JSON.parse(localStorage.getItem("user"));
   const cartStorage = JSON.parse(localStorage.getItem("cart"));
   // console.log(cartStorage?.length);
+  // console.log(userStorage);
+
   const [cartNumber, setCartNumber] = useState(cartStorage?.length);
   const [cartItem, setCartItem] = useState(cartStorage);
+  const [user, setUser] = useState(userStorage ? userStorage : undefined);
+
   useEffect(() => {
     if (props.cartData) {
       // console.log(props);
@@ -40,11 +48,17 @@ const CustomerHeader = (props) => {
       setCartItem(localCartItem);
       setCartNumber(cartNumber - 1);
       localStorage.setItem("cart", JSON.stringify(localCartItem));
-      if(localCartItem.length==0){
+      if (localCartItem.length == 0) {
         localStorage.removeItem("cart");
       }
     }
   }, [props.removeCartData]);
+
+  //Logout
+  const logout = () => {
+    localStorage.removeItem("user");
+    router.push("/user-auth");
+  };
   return (
     <>
       <div className="header-wrapper">
@@ -59,14 +73,30 @@ const CustomerHeader = (props) => {
           <li>
             <Link href="/">Home</Link>
           </li>
+          {user ? (
+            <>
+              <li>
+                <Link href="#">{user?.name}</Link>
+              </li>
+              <li>
+                <button onClick={logout}>Logout</button>
+              </li>
+            </>
+          ) : (
+            <>
+              <li>
+                <Link href="/user-auth">Login</Link>
+              </li>
+              <li>
+                <Link href="/user-auth">SignUp</Link>
+              </li>
+            </>
+          )}
+
           <li>
-            <Link href="/">Login</Link>
-          </li>
-          <li>
-            <Link href="/">SignUp</Link>
-          </li>
-          <li>
-            <Link href={cartNumber?"/cart":"#"}>Cart({cartNumber ? cartNumber : 0})</Link>
+            <Link href={cartNumber ? "/cart" : "#"}>
+              Cart({cartNumber ? cartNumber : 0})
+            </Link>
           </li>
           <li>
             <Link href="/">Add Restaurant</Link>

@@ -159,3 +159,10 @@ Detailed Steps ->>>>>>>
 	Make Api route
 	code for SignUp Api
 	Call Api
+
+44-> Manage SignUp and Logout
+
+	Redirect after user sign up
+	Store user data in local storage
+	Show the user name and logout option in Header
+	Logout user
