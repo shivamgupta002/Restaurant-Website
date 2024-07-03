@@ -14,8 +14,7 @@ const UserSignUp = () => {
   const router = useRouter();
 
   const handleSignUp = async () => {
-    // e.preventDefault();
-    console.log(name, email, password, cPassword, city, address, mobile);
+    // console.log(name, email, password, cPassword, city, address, mobile);
     let response = await fetch("http://localhost:3000/api/user", {
       method: "POST",
       body: JSON.stringify({ name, email, password, city, address, mobile }),

@@ -173,3 +173,10 @@ Detailed Steps ->>>>>>>
 	Make login input field
 	Get input field values in states
 	Toggle Login and SignUp component
+
+46-> User Login API
+
+	Make Login API
+	Call Login API
+	Store API response in local storage
+	Redirect to main page
