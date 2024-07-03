@@ -34,8 +34,6 @@ const UserSignUp = () => {
 
   return (
     <>
-      <h1>SignUp Page</h1>
-
       {/* Name */}
       <div className="input-wrapper">
         <input

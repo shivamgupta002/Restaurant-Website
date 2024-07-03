@@ -166,3 +166,10 @@ Detailed Steps ->>>>>>>
 	Store user data in local storage
 	Show the user name and logout option in Header
 	Logout user
+
+45-> Login UI
+
+	Make Login component
+	Make login input field
+	Get input field values in states
+	Toggle Login and SignUp component
