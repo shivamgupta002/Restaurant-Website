@@ -208,3 +208,10 @@ Detailed Steps ->>>>>>>
 	Get a resto_id from LocalStorage
 	Get food item from LocalStorage
 	Integrate API for place order
+
+51-> Manage Cart after order
+
+	Make profile page
+	Remove cart count from Header
+	Remover cart data from LocalStorage
+	Redirect the user on my profile
