@@ -187,3 +187,10 @@ Detailed Steps ->>>>>>>
 	Display user detail and order detail
 	Add style
 	Redirect cart page to order now page
+
+48-> Handle User Auth when place Order
+
+	Check user is logged in or not on the cart Page
+	Redirect on user auth
+	Pass query string when placing an order
+	Redirect back to the order page after login

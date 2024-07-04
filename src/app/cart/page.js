@@ -19,7 +19,11 @@ const Page = () => {
         })
   );
   const orderNow = () => {
-    route.push("/order");
+    if (JSON.parse(localStorage.getItem("user"))) {
+      route.push("/order");
+    } else {
+      route.push("/user-auth?order=true");
+    }
   };
   return (
     <>
