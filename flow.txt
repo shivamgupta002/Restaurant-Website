@@ -180,3 +180,10 @@ Detailed Steps ->>>>>>>
 	Call Login API
 	Store API response in local storage
 	Redirect to main page
+
+47-> Order Now Page
+
+	Make a new route for the order
+	Display user detail and order detail
+	Add style
+	Redirect cart page to order now page
