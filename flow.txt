@@ -201,3 +201,10 @@ Detailed Steps ->>>>>>>
 	Make APi route
 	Make Schema
 	Make API
+
+50-> Integrate Order API
+
+	Get a user Id  from LocalStorage
+	Get a resto_id from LocalStorage
+	Get food item from LocalStorage
+	Integrate API for place order

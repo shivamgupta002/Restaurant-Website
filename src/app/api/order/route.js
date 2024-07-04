@@ -1,5 +1,6 @@
 import { connectionStr } from "@/app/lib/db";
 import { orderSchema } from "@/app/lib/ordersModel";
+import mongoose from "mongoose";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
@@ -9,7 +10,7 @@ export async function POST(request) {
   const orderObj = new orderSchema(payload);
   const result = await orderObj.save();
   if (result) {
-    success: true;
+    success = true;
   }
   return NextResponse.json({ result, success });
 }
