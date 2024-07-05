@@ -240,4 +240,10 @@ Detailed Steps ->>>>>>>
 
 	Make new page for the delivery partner
 	Make login form
-	Make SignUp form
+	Make SignUp 
+	
+55-> Delivery partner auth API
+
+	Make schema field
+	Make login Api
+	Make SignUp Api
