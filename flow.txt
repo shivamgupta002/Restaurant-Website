@@ -215,3 +215,10 @@ Detailed Steps ->>>>>>>
 	Remove cart count from Header
 	Remover cart data from LocalStorage
 	Redirect the user on my profile
+
+52-> Get my order API
+
+	Make get api method
+	Get id from url
+	Get data from order collection
+	Get data from food collection 
