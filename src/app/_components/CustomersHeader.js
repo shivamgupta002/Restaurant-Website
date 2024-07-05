@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -6,8 +7,10 @@ const CustomerHeader = (props) => {
   // To Navigate
   const router = useRouter();
 
-  const userStorage = JSON.parse(localStorage.getItem("user"));
-  const cartStorage = JSON.parse(localStorage.getItem("cart"));
+  const userStorage =
+    localStorage.getItem("user") && JSON.parse(localStorage.getItem("user"));
+  const cartStorage =
+    localStorage.getItem("cart") && JSON.parse(localStorage.getItem("cart"));
   // console.log(cartStorage?.length);
   // console.log(userStorage);
 

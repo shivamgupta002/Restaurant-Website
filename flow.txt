@@ -15,11 +15,14 @@ Project Process->
 
 Detailed Steps ->>>>>>>
 
+########################	Phase 1 Start (For Restaurant)  ##################################
+
 1-> Restaurant Login and Register UI
 	Make main page for login and register of restaurant
 	Make components for login and register of restaurant
 	Add Style for button,input box
 	remove default style and home page content
+	Add fix bugs in Customer Header 
 
 
 
@@ -36,6 +39,8 @@ Detailed Steps ->>>>>>>
 	Update food items
 	Test list of food items
 	Check all entries in 
+
+########################	Phase 2 Start (For Customer)  ##################################
 
 26-> Header and footer for customer
 
@@ -228,3 +233,11 @@ Detailed Steps ->>>>>>>
 	Add Header and Footer in my profile page
 	Call my order API
 	Render data on UI
+
+########################	Phase 3 Start (Delivery partner) ##################################
+
+54-> Delivery partner Auth Page
+
+	Make new page for the delivery partner
+	Make login form
+	Make SignUp form
