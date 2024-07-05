@@ -222,3 +222,9 @@ Detailed Steps ->>>>>>>
 	Get id from url
 	Get data from order collection
 	Get data from food collection 
+
+53-> Integrate My Order API
+
+	Add Header and Footer in my profile page
+	Call my order API
+	Render data on UI

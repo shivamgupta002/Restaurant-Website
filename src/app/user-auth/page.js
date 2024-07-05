@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import CustomerHeader from "../_components/CustomersHeader";
-import RestaurantFooter from "../_components/Footer";
+import Footer from "../_components/Footer";
 import UserLogin from "../_components/UserLogin";
 import UserSignUp from "../_components/UserSignUp";
 
@@ -20,7 +20,7 @@ const UserAuth = (props) => {
             : "Already have account Login"}
         </button>
       </div>
-      <RestaurantFooter />
+      <Footer />
     </>
   );
 };

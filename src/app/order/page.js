@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import CustomerHeader from "../_components/CustomersHeader";
-import RestaurantFooter from "../_components/Footer";
+import Footer from "../_components/Footer";
 import { DELIVERY_CHARGES, TAX } from "../lib/constants";
 import { useRouter } from "next/navigation";
 
@@ -104,7 +104,7 @@ const Page = () => {
           <button onClick={orderNow}>Place your order</button>
         </div>
       </div>
-      <RestaurantFooter />
+      <Footer />
     </>
   );
 };

@@ -1,12 +1,11 @@
-
-const RestaurantFooter = () => {
+const Footer = () => {
   return (
     <>
-    <div className="footer-wrapper">
+      <div className="footer-wrapper">
         <p>@ All Rights reserved by Shivam app</p>
-    </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default RestaurantFooter
+export default Footer;
