@@ -21,12 +21,161 @@ Detailed Steps ->>>>>>>
 	Make main page for login and register of restaurant
 	Make components for login and register of restaurant
 	Add Style for button,input box
-	remove default style and home page content
+	Remove default style and home page content
 	Add fix bugs in Customer Header 
 
+2-> Restaurant Login and Register UI
+
+	Make main page fpr login and registration of restaurant
+	Make components for login and register of restaurant
+	Add Style for button,input box
+	Remove default style and home page content
+
+3-> Header and footer for restaurant pages
+
+	Make header component for restaurant pages
+	Style for header
+	Add footer for complete app
+	Style for header
+
+4-> MongoDB setup
+	(if you want to use atlas then-> signup for mongodb atlas,
+	Make project,
+	Add cluster ,
+	Add IP in project,
+	Make database 
+	And collection)
+
+5->	MongoDB Connection
+
+	Make env file 
+	Make route for api
+	Make model (lib folder)
+	Make db file 
+	
+6-> Handle form data for restaurant signup
+
+	Define state for each input field
+	Set data in state for each input field
+	Make a function for signup
+	Check input field data
+
+7->	Restaurant Registration
+
+	Make Api route
+	Make Api call
+	Code to save data in database
+
+8-> Handle Restaurant SignUp Flow
+
+	Make restaurant dashboard page
+	Redirect after signup
+	Store data in LocalStorage of restaurant
+	Update header 
+	Make logout feature
+
+9->	Signup form validation
+
+	Define error state for empty values
+	Define error for password match
+	Show error message
+	Style error message
+
+10-> Login form handling and validation
+
+	Get input value in states
+	Define error state
+	Show error message
+
+11->  Restaurant Login API
+
+	Write api for login
+	Send api request for login
+	Verify login api
+	Handle response of login api
+
+12-> Handle Restaurant login flow
+
+	Validate Login api
+	Store login data in local storage
+	Redirect to the dashboard after login
+
+13-> Handle Restaurant login flow
+
+	Verify login api
+	Store login data  in local storage
+	Redirect to the dashboard after login
+	
+14-> Add Food Item component
+
+	Make new component
+	Add a button for display component
+	Define input fields
+	Define state for input field value
+	Get input field values in states
+
+15-> Food item collection and schema
+
+	Make new collection for food items
+	Make a file for define model and schema
+	Make Schema for food collection
+
+16-> Add food item api
+
+	Make api route for add food items
+	Call api for add food items
+	
+17-> Validate for add food items api
+
+	Define state for input fields validation
+	Display validation message with input fields
+	Add style with error message
+	Validate api result
+
+18-> Make API for food items list
+
+	Make Dynamic route for api
+	Get data from database
+	Make new component for food items list 
+	Add static table
+	Add style to table
+
+19-> Integrate api and display list of food items
+
+	Call Api on component load
+	Store Api data in state
+	Display data on UI
+
+20-> Delete api for food items
+
+	Make DELETE API method
+	Write code to delete food items
+
+21-> Integrate api for delete food item
+
+	Make a function for calling api
+	Write code for calling api
+	Reload list after delete food item
+	Redirect after add food items
+
+22-> Edit food item Page Ui
+
+	Make new page for edit
+	Redirect for editing food items
+	Get food item id from url
+	
+23-> Populate data in edit food item with api
+
+	Make APi route 
+	Make api route for get data with food item id
+	Call api
+	Update state for input fields
 
 
-24-> Make Api for edit food items
+
+24-> Edit food item api
+
+	Make Api for edit food items
 	Call Api for edit fod items
 	Redirect back to food items list
 	Test Flow
@@ -38,7 +187,7 @@ Detailed Steps ->>>>>>>
 	Add food items in Restaurant
 	Update food items
 	Test list of food items
-	Check all entries in 
+	Check all entries
 
 ########################	Phase 2 Start (For Customer)  ##################################
 
