@@ -1,10 +1,35 @@
 "use client";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const Page = () => {
+  // To Navigate
+  const router = useRouter();
+
   // login state
   const [loginMobile, setLoginMobile] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
+
+  const loginHandle = async () => {
+    // console.log(email, password);
+    let response = await fetch(
+      "http://localhost:3000/api/deliveryPartners/login",
+      {
+        method: "POST",
+        body: JSON.stringify({ mobile: loginMobile, password: loginPassword }),
+      }
+    );
+    response = await response.json();
+    if (response.success) {
+      alert("Delivery Partner Login successfully");
+      const { result } = response;
+      delete result.password;
+      localStorage.setItem("delivery", JSON.stringify(result));
+    } else {
+      alert("Invalid credentials! Please try again ");
+    }
+  };
+
   // signup state
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
@@ -12,7 +37,27 @@ const Page = () => {
   const [cPassword, setCPassword] = useState("");
   const [city, setCity] = useState("");
   const [address, setAddress] = useState("");
-  const loginHandle = () => {};
+
+  const handleSignUp = async () => {
+    // console.log(name, email, password, cPassword, city, address, mobile);
+    let response = await fetch(
+      "http://localhost:3000/api/deliveryPartners/signup",
+      {
+        method: "POST",
+        body: JSON.stringify({ name, mobile, password, city, address }),
+      }
+    );
+    response = await response.json();
+    if (response.success) {
+      alert("Delivery Partner signup successfully");
+      const { result } = response;
+      delete result.password;
+      localStorage.setItem("delivery", JSON.stringify(result));
+    } else {
+      alert("Error occur while delivery signup ");
+    }
+  };
+
   return (
     <>
       <h1>Delivery partner</h1>
@@ -118,8 +163,7 @@ const Page = () => {
 
           {/* Submit Button */}
           <div className="input-wrapper">
-            <button className="button">
-              {/* <button className="button" onClick={handleSignUp}> */}
+            <button className="button" onClick={handleSignUp}>
               SignUp
             </button>
           </div>

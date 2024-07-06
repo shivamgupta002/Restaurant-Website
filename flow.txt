@@ -247,3 +247,8 @@ Detailed Steps ->>>>>>>
 	Make schema field
 	Make login Api
 	Make SignUp Api
+
+56-> Integrate Login and SignUp API
+
+	Call SignUp api
+	Call login api
