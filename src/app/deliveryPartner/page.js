@@ -1,10 +1,18 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import DeliveryHeader from "../_components/DeliveryHeader";
 
 const Page = () => {
   // To Navigate
   const router = useRouter();
+
+  useEffect(() => {
+    const delivery = JSON.parse(localStorage.getItem("delivery"));
+    if (delivery) {
+      router.push("/deliveryDashboard");
+    }
+  }, []);
 
   // login state
   const [loginMobile, setLoginMobile] = useState("");
@@ -25,6 +33,7 @@ const Page = () => {
       const { result } = response;
       delete result.password;
       localStorage.setItem("delivery", JSON.stringify(result));
+      router.push("/deliveryDashboard");
     } else {
       alert("Invalid credentials! Please try again ");
     }
@@ -53,6 +62,7 @@ const Page = () => {
       const { result } = response;
       delete result.password;
       localStorage.setItem("delivery", JSON.stringify(result));
+      router.push("/deliveryDashboard");
     } else {
       alert("Error occur while delivery signup ");
     }
@@ -60,6 +70,7 @@ const Page = () => {
 
   return (
     <>
+      <DeliveryHeader />
       <h1>Delivery partner</h1>
       <div className="auth-container">
         {/* ######################  Login   ###################### */}
