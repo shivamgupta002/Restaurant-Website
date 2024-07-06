@@ -258,3 +258,8 @@ Detailed Steps ->>>>>>>
 	Make delivery dashboard page
 	Make a Header for delivery partner pages
 	Handle Login Flow
+
+58-> Delivery Partner API
+
+	Make API route 
+	Integrate API

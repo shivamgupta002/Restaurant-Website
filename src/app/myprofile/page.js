@@ -19,7 +19,7 @@ const Page = () => {
     }
   };
 
-  console.log(myOrders);
+  // console.log(myOrders);
   return (
     <>
       <CustomerHeader />
