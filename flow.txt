@@ -263,3 +263,9 @@ Detailed Steps ->>>>>>>
 
 	Make API route 
 	Integrate API
+
+59-> Api for delivery partner order list
+
+	Make a new route for api
+	Make aAPI for delivery partner order list
+	Integrate api
