@@ -1,3 +1,4 @@
+import loading from "./_components/image/loading.gif";
 const Loading = () => {
   return (
     <>
@@ -7,10 +8,10 @@ const Loading = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            marginTop:'20%'
+            marginTop: "15%",
           }}
         >
-          <h4>Loading...</h4>
+          <img src="/image/loading.gif" alt="loading" />
         </div>
       </div>
     </>
